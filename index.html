@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML QUIZ !</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="ICONIC.png" type="IMAGE">
+</head>
+<body>
+    <div id="timer">01 : 00 : 00</div>
+
+    <div id="welcome">
+        <h1>Welcome to the<br id="front">JavaScript Quiz!</h1>
+        <button id="startQuiz">Start Quiz</button>
+        <button id="viewScores">View Highscores</button>
+    </div>
+
+
+
+    <div id="quiz" style="display:none;">
+        <h2 id="question"></h2>
+        <form>
+            <input type="radio" name="answer" id="answer0" value="0">
+            <label for="answer0" id="label0"></label><br>
+            <input type="radio" name="answer" id="answer1" value="1">
+            <label for="answer1" id="label1"></label><br>
+            <input type="radio" name="answer" id="answer2" value="2">
+            <label for="answer2" id="label2"></label><br>
+            <input type="radio" name="answer" id="answer3" value="3">
+            <label for="answer3" id="label3"></label><br>
+        </form>
+
+        <div align="center">
+        <button id="submitAnswer">Submit Answer</button>
+        </div>
+        
+    </div>
+
+    <div id="inputScore" style="display:none;">
+        <h2>Your Score: <span id="finalScore"></span></h2>
+        <input type="text" id="initials" placeholder="Enter your initials">
+        <button id="submitInitials">Submit</button>
+    </div>
+
+    <div align="center">
+    <div id="highscores" style="display:none;">
+        <h2>Highscores</h2>
+        <div id="scores"></div>
+        <button id="goBack">Go Back</button>
+        <button id="clearScores">Clear Highscores</button>
+        <button id="viewAnswers">View Correct Answers</button>
+    </div>
+    </div>
+
+    <div align="center">
+    <div id="answers" style="display:none;">
+            <h2>Correct Answers</h2>
+       
+        <div id="answerList"></div>
+        <button id="backToScores">Back to Highscores</button>
+    </div>
+    </div>
+
+    <script src="JavaScript/code-quiz.js"></script>
+    <script src="JavaScript/questions.js"></script>
+
+</body>
+</html>
